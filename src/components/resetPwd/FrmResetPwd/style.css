@@ -56,11 +56,13 @@
   width: 341; 
 }
 
-.btnIngresar{
+.btnReestablecer{
   width: 342px;
   height: 45px;
   text-transform: capitalize;
+  border: 0;
   background: #F21C1C;
+  color: white;
 }
 
 @media (max-width: 576px) {

@@ -47,7 +47,6 @@ function FrmRecoveryPwd(props) {
               email="Corys90@hotmail.com"
               handlerHide={() => handleBtnClose()}
         /> 
-
      </div>
   );
 }

@@ -1,13 +1,13 @@
 import LogoLogin from '../../components/logo';
-import FrmRestePwd from '../../components/login/FrmLogin';
+import FrmResetPwd from '../../components/resetPwd/FrmResetPwd';
 
-function ResetPwd() {
+function PageResetPwd() {
   return (
     <div>
         <LogoLogin />
-        <FrmRestePwd />         
+        <FrmResetPwd />         
     </div>
   );
 }
 
-export default ResetPwd;
+export default PageResetPwd;
