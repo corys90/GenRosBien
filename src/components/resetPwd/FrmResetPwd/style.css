@@ -1,0 +1,95 @@
+.containerLogin{
+  display: flex;
+  justify-content: center;
+}
+
+.formularioLogin{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:fit-content;
+  height: 556px;
+  left: 536px;
+  top: 247px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+/*   background-color: aquamarine; */
+}
+
+.divImgRelax {
+  height: 558px;
+  width: 424px;
+  border-radius: 0px 0px 0px 0px;  
+  background: url("relaxed-woman-enjoying-sea.png");
+}
+
+.login{
+  width: 424px;
+  height: 558px;
+}
+
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 156px; 
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+/*   background: red; */
+}
+
+.divUserPwd{
+  display: flex;
+  justify-content: center;
+  height: 45px;
+}
+
+.divOlvidoPwd{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.textBox{
+  width: 341; 
+}
+
+.btnIngresar{
+  width: 342px;
+  height: 45px;
+  text-transform: capitalize;
+  background: #F21C1C;
+}
+
+@media (max-width: 576px) {
+
+  .divImgRelax{
+    display: none;
+  }
+
+  .login{
+    width: 90%;
+  }
+
+  .formularioLogin{
+    width: 90%;
+  }
+}
+
+/* @media (max-width: 744px) {
+
+  .login{
+    width: 100%;
+  }
+
+  .divImgRelax{
+
+    width: 100%;
+  }
+
+  .formularioLogin{
+    width: 95%;
+  }
+} */
