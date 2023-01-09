@@ -23,37 +23,34 @@
 
 .bell{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: #AAAAAA;
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: #AAAAAA;
-  height: 53px;
-  width: 5%;
+  height: 23px;
+  width: 35px;
   color: #2B2B2B;
 }
 
 .nombreUsr{
   display: flex;
   flex-direction: row;
-  justify-content:  space-evenly;
-  align-items: center;
-  width: 25%;
+  justify-content:space-evenly ;
+  width: 150px;
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: #AAAAAA;
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: #AAAAAA;
-  height: 53px;
   color: #2B2B2B;
 }
 
 .imgBarContainer{
-  width: 40%;
+  width: 700px;
 }
 
 .imgBellIcon{
@@ -65,12 +62,38 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 25%;
+  width: 150px;
   align-items: center;
   color: #2B2B2B;
 }
 
-@media (max-width: 576px) {
+.hide1{
+  display: none;
+}
+
+.hide2{
+  display: block;
+}
+
+.iconsMobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-toggler_color {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+
+@media (max-width: 993px) {
+
+  .imgBarContainer{
+    width: auto;
+  }
 
   .divImgRelax{
     display: none;
@@ -83,6 +106,22 @@
   .formularioLogin{
     width: 90%;
   }
+
+  .hide1{
+    display: block;
+  }
+
+  .hide2{
+    display: none;
+  }
+}
+
+@media (max-width: 1007px) {
+
+  .imgBarContainer{
+    width: auto;
+  }
+
 }
 
 /* @media (max-width: 744px) {
