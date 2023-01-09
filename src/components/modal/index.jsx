@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import logo from '../modal/Vector.png';
-import './style.css';
+import '../modal/style.css';
 
 function MensajeModal(props) {
 
@@ -14,11 +14,11 @@ function MensajeModal(props) {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body className='mx-auto modalBody'>
-                    <label style={{}} >{props.mensaje}</label>
+                    <label >{props.mensaje}</label>
                     <strong>{props.email}</strong>
                 </Modal.Body>
                 <Modal.Footer>
-                    <button type="button" className="mx-auto btnIngresar" onClick={() => props.handlerHide()}>
+                    <button type="button" className="mx-auto btnModalReset" onClick={() => props.handlerHide()}>
                         Aceptar
                     </button>
                 </Modal.Footer>

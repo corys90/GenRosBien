@@ -1,44 +1,55 @@
+import React, { useState } from 'react';
+import MensajeModal from '../../modal';
 import logo from './relaxed-woman-enjoying-sea.png';
 import './style.css';
 
-function FrmLogin() {
+function FrmResetPwd() {
+
+  const [show, setShow] = useState(false);
+
+  const  handlerBtnReestablecer = () => {
+    setShow(true);
+  }
+
+  const handleBtnClose = () =>{ 
+    setShow(false);
+  }
+
   return (
     <div className='containerLogin'>
         <div className='formularioLogin'>
           <div className='login'>
             <div className='titulo' >
-              <label>SISTEMA DE LOGIN</label>
+              <label>REESTABLECER CONTRASEÑA</label>
             </div>
             <form>
               <div className=" mb-3 divUserPwd">
                 <input type="text" className="form-control" 
-                  style={{width: 341}} id="txtUser" placeholder="Nombre de usuario"/>
+                  style={{width: 341}} id="txtUser" placeholder="Nueva contraseña"/>
               </div>
               <div style={{height: "20px"}}></div>
               <div className=" mb-3 divUserPwd">
                 <input type="password" className="form-control" 
-                style={{width: 341}} id="txtPassword" placeholder="Contraseña"/>
+                style={{width: 341}} id="txtPassword" placeholder="Repita contraseña"/>
               </div>              
             </form>
-            <div style={{height: "20px"}}></div>
+            <div style={{height: "100px"}}></div>
             <div className="mb-3 divOlvidoPwd">
-              <a href="www.genesys.cl">
-                ¿Haz olvidado tu contraseña?
-                <br />
-                clic aquí. 
-              </a>
-            </div>
-            <div style={{height: "20px"}}></div>
-            <div className="mb-3 divOlvidoPwd">
-              <button  type="button" className="btn btn-danger btnIngresar">Ingresar</button>
+              <button  type="button" className=" btnReestablecer" onClick={handlerBtnReestablecer}>Reestablecer</button>
             </div>
           </div>
           <div className=" img-fluid divImgRelax">
             <img src={logo} alt="" />
           </div>
-        </div>       
+        </div>  
+        <MensajeModal 
+              show={show}
+              mensaje="Su contraseña ha sido reestablecida con éxito"
+              email=""
+              handlerHide={() => handleBtnClose()}
+        />      
     </div> 
   );
 }
 
-export default FrmLogin;
+export default FrmResetPwd;
