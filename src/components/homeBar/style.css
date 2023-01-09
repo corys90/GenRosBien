@@ -1,0 +1,102 @@
+.imgmobile{
+  width: 53px;
+  height: 53px;
+  border: 1px;
+}
+
+.alignItemsHomeBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.alignItemsTextBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+  height: 53px;
+
+}
+
+.bell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #AAAAAA;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #AAAAAA;
+  height: 53px;
+  width: 5%;
+  color: #2B2B2B;
+}
+
+.nombreUsr{
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-evenly;
+  align-items: center;
+  width: 25%;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #AAAAAA;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #AAAAAA;
+  height: 53px;
+  color: #2B2B2B;
+}
+
+.imgBarContainer{
+  width: 40%;
+}
+
+.imgBellIcon{
+  width: 18px;
+  height: 20px;
+}
+
+.powerOnOff{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 25%;
+  align-items: center;
+  color: #2B2B2B;
+}
+
+@media (max-width: 576px) {
+
+  .divImgRelax{
+    display: none;
+  }
+
+  .login{
+    width: 90%;
+  }
+
+  .formularioLogin{
+    width: 90%;
+  }
+}
+
+/* @media (max-width: 744px) {
+
+  .login{
+    width: 100%;
+  }
+
+  .divImgRelax{
+
+    width: 100%;
+  }
+
+  .formularioLogin{
+    width: 95%;
+  }
+} */
