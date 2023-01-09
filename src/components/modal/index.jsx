@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import {Button} from 'react-bootstrap';
+import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import logo from '../modal/Vector.png';
 import './style.css';
