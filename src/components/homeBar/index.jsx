@@ -11,7 +11,7 @@ function HomeBar() {
   const [nombre, setNombre] = useState("Cristian A.")
 
   return (
-    <Navbar bg="light" expand="lg" className='container-fluid alignItemsHomeBar'>
+    <Navbar bg="light" expand="lg" className='container-fluid '>
       <Container className=''>
         <Navbar.Brand href="#home">      
             <div className='imgBarContainer'>          
