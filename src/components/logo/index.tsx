@@ -1,5 +1,5 @@
-import logo from './asd1.svg';
 import './style.css';
+const logo = require( './asd1.png');
 
 function LogoLogin() {
   return (

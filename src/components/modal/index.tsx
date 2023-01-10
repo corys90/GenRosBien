@@ -1,13 +1,13 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import logo from '../modal/Vector.png';
 import '../modal/style.css';
+const logo = require('../modal/Vector.png');
 
-function MensajeModal(props) {
+function MensajeModal(props: {show: boolean, mensaje: string, email: string, handlerHide: any}) {
 
   return (
       <div>
-            <Modal show={props.show} centered="true" >
+            <Modal show={props.show} centered={true} >
                 <Modal.Header >
                     <Modal.Title className='mx-auto'>
                         <img src={logo} alt="" />

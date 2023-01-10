@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import MensajeModal from '../../modal';
-import logo from './relaxed-woman-enjoying-sea.png';
 import './style.css';
+const logo =  require('./relaxed-woman-enjoying-sea.png');
 
-function FrmRecoveryPwd(props) {
+function FrmRecoveryPwd(props: any) {
 
   const [show, setShow] = useState(false);
 

@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import logo from '../homeBar/asd1.svg';
-import bellIcon from '../homeBar/campanaIcon.png';
-import powerIcon from '../homeBar/powerIcon.png';
-import userIcon from '../homeBar/userIcon.png';
 import './style.css';
+const logo = require("../homeBar/asd1.png")  as string;
+const bellIcon  = require('../homeBar/campanaIcon.png');
+const powerIcon = require('../homeBar/powerIcon.png');
+const userIcon = require( '../homeBar/userIcon.png');
 
 function HomeBar() {
 
   const [nombre, setNombre] = useState("Cristian A.")
 
   return (
-    <Navbar bg="light" expand="lg" className='container-fluid '>
+    <Navbar bg="light" expand="lg" className='container-fluid alignItemsHomeBar'>
       <Container className=''>
         <Navbar.Brand href="#home">      
             <div className='imgBarContainer'>          

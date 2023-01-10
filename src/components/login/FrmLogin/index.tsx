@@ -1,5 +1,5 @@
-import logo from './relaxed-woman-enjoying-sea.png';
 import './style.css';
+const logo = require('./relaxed-woman-enjoying-sea.png');
 
 function FrmLogin() {
   return (
