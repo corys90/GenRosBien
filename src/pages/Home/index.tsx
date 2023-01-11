@@ -1,4 +1,4 @@
-import { Pagination } from 'react-bootstrap';
+import { Container, Pagination } from 'react-bootstrap';
 import HomeBar from '../../components/homeBar';
 import Tabla from '../../components/tabla';
 
@@ -44,12 +44,15 @@ function PageHome() {
   return (
     <div>
         <HomeBar/>
-        <div style={{height: "54px"}}></div>     
+        <Container>
+            <div style={{height: "54px", display: 'flex', alignItems: 'center'}} >Home</div>
+        </Container>    
         <Tabla 
           header="ÚLTIMOS MOVIMIENTOS"
           columHeader={["Tipo", "Fecha", "Monto", "Estado"]}
           data={dataUltimosMov}
           nfilasShown="5"
+          filter={false}
         />  
 
         <div className='container'>
@@ -75,6 +78,7 @@ function PageHome() {
           columHeader={["Tipo", "Total", "Utilizado", "Disponible"]}
           data={dataResumen}
           nfilasShown="5"
+          filter={true}
         />   
 
         <div className='container'>
