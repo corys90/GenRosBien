@@ -30,26 +30,19 @@
 
 .titulo{
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 156px; 
   font-family: Ubuntu;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.1em;
-/*   background: red; */
-}
-
-.divUserPwd{
-  display: flex;
-  justify-content: center;
-  height: 45px;
+  flex-direction: column;
+  text-align: center;
 }
 
 .divOlvidoPwd{
   display: flex;
-  justify-content: center;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .textBox{
@@ -57,10 +50,21 @@
 }
 
 .btnIngresar{
-  width: 342px;
+  width: 151px;
   height: 45px;
   text-transform: capitalize;
+  border: 0;
   background: #F21C1C;
+  color: white;
+}
+
+.btnVolver{
+  width: 151px;
+  height: 45px;
+  text-transform: capitalize;
+  border: 0;
+  background: #AAAAAA;
+  color: white;
 }
 
 @media (max-width: 576px) {

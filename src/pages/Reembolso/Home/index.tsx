@@ -1,14 +1,8 @@
 import { Container, Pagination } from 'react-bootstrap';
-import HomeBar from '../../components/homeBar';
-import Tabla from '../../components/tabla';
+import HomeBar from '../../../components/homeBar';
+import Tabla from '../../../components/tabla';
 
-const stilo: object = {
-  display: "flex", 
-  flexDirection: "row", 
-  justifyContent: 'center'
-}
-
-function PageReembolso() {
+function PageReembolsoHome() {
 
   const act = true;
   const dataUltimosMov: string[][] = [
@@ -42,4 +36,4 @@ function PageReembolso() {
   );
 }
 
-export default PageReembolso;
+export default PageReembolsoHome;

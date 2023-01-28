@@ -54,7 +54,6 @@ function PageHome() {
           nfilasShown="5"
           filter={false}
         />  
-
         <div className='container'>
           <div style={stilo} >
             <Pagination className='text-dark'>

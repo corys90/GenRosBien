@@ -1,0 +1,70 @@
+.sombra{
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70px;
+}
+
+.nroReembolso{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #2B2B2B;
+}
+
+.bodySections{
+  display: flex;
+  flex-direction: column;
+  height: 144px;
+  width: 443px;
+}
+
+.detailSectionMiddle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyMiddleDescarga{
+  display: flex;
+  flex-direction: row;
+}
+
+.botonDescargar{
+  background-color: red;
+  width: 100%;
+  font-size: 11px;
+  color: white;
+  border: 0px;
+}
+
+.textObs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 176px;
+}
+
+.hr{
+  border: 1px;
+  height: 2px;
+  background-color: grey;
+}
+
+@media (max-width: 993px) {
+
+  .body{
+
+    flex-direction: column;
+
+  }
+
+}

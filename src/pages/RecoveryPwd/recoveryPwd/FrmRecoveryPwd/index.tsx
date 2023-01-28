@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import MensajeModal from '../../modal';
+import { Button } from 'react-bootstrap';
+import MensajeModal from '../../../../components/modal';
 import './style.css';
 const logo =  require('./relaxed-woman-enjoying-sea.png');
 
@@ -31,9 +32,9 @@ function FrmRecoveryPwd(props: any) {
                 </div>              
               </form>
               <div style={{height: "120px"}}></div>
-              <div className="mb-3 divOlvidoPwd">
-                <button  type="button" className=" btnIngresar" onClick={handlerBtnSolicitar}>Solicitar</button>
-                <button  type="button" className=" btnVolver"  onClick={handlerBtnSolicitar}>Volver</button>
+              <div className="mb-3 divOlvidoPwd ">
+                <Button  className=" btnIngresar btn-danger" onClick={handlerBtnSolicitar}>Solicitar</Button>
+                <Button  className=" btnVolver btn-secondary"  onClick={handlerBtnSolicitar}>Volver</Button>
               </div>
             </div>
             <div className=" img-fluid divImgRelax">

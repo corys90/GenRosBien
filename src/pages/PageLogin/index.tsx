@@ -1,7 +1,7 @@
 import LogoLogin from '../../components/logo';
-import FrmLogin from '../../components/login/FrmLogin';
+import FrmLogin from './FrmLogin';
 
-function Login() {
+function PageLogin() {
   return (
     <div>
         <LogoLogin/>         
@@ -10,4 +10,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default PageLogin;

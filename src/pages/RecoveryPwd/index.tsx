@@ -1,6 +1,6 @@
 
 import LogoLogin from '../../components/logo';
-import FrmRecoveryPwd from '../../components/recoveryPwd/FrmRecoveryPwd';
+import FrmRecoveryPwd from './recoveryPwd/FrmRecoveryPwd';
 
 function PageRecoveryPwd() {
   return (
