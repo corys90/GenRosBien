@@ -23,7 +23,7 @@ function HomeBar() {
           </div>    
       </Navbar.Brand>
         <div className='iconsMobile me-1 gap-4'>
-          <Link to="#!" >  
+          <Link to="/reembolso/detail" >  
                 <div className='bell hide1 pt-2' >              
                     <img src={bellIcon} alt="Notificaciones" />       
                 </div>

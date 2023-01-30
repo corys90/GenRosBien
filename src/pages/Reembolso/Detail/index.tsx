@@ -48,7 +48,7 @@ const PageReembolsoDetail = () => {
                     </div>
                   </div>
               </div>
-              <div className=' borderAbajo'>
+              <div className=' borderAbajo pb-4'>
                   <div className='tituloSeccionMiddle ps-2'>Documentación de Reembolso</div>
                   <div>
                     <i className="bi-file-pdf-fill text-warning mt-2 p-2">Archivo1.pdf</i>
@@ -61,14 +61,12 @@ const PageReembolsoDetail = () => {
                   </div>
               </div>
             </div>
-            <div className='hr desparece'></div>
+            <div className='hr desparece '></div>
             <div className='textObs'>
-              <div className='textObs' >
                   <i className="bi-person-workspace me-2"
                     style={{fontSize: "14px"}} 
                   ></i>
                   Sin Observaciones
-              </div>
             </div>
         </div>         
     </div>
