@@ -5,13 +5,13 @@ import './style.css';
 const logo = require('./relaxed-woman-enjoying-sea.png');
 
 const bordeTextBox = {
-  width: "100%", 
+  width: "90%", 
   border: "0px",
   borderStyle: "solid",
   borderRadius: "0px",
   borderBottomWidth: "2px",
   borderColor: "#999999",
-  backgroundColor: "red"
+  backgroundColor: "white"
 }
 
 function FrmLogin() {
@@ -27,8 +27,8 @@ function FrmLogin() {
   }
 
   return (
-    <div className='containerLogin'>
-        <div className='formularioLogin'>
+    <div className='containerLogin' style={{backgroundColor: "#EEF2F5"}}>
+        <div className='formularioLogin'  style={{backgroundColor: "white"}}>
           <div className='login'>
             <div className='titulo' >
                 <label>SISTEMA DE LOGIN</label>
@@ -37,7 +37,7 @@ function FrmLogin() {
                 <div className=" mb-3 divUserPwd">
                   <input type="text" className="form-control " 
                     style={bordeTextBox} 
-                    id="txtUser" placeholder="Nombre de usuario"/>
+                    id="txtUser" placeholder="Nombre de usuario" />
                 </div>
                 <div style={{height: "20px"}}></div>
                 <div className=" mb-3 divUserPwd ">
@@ -57,10 +57,10 @@ function FrmLogin() {
             </div>
             <div style={{height: "20px"}}></div>
             <div className=" mb-3 text-center ">
-              <Button className="btn btn-danger rounded-0 " onClick={validar} style={{width: "100%", height: "45px"}}>Ingresar</Button>
+              <Button className="btn btn-danger rounded-0 " onClick={validar} style={{width: "90%", height: "45px"}}>Ingresar</Button>
             </div>
           </div>
-          <div className=" img-fluid divImgRelax">
+          <div className=" img-fluid divImgRelax" >
             <img src={logo} alt="" />
           </div>
         </div>       

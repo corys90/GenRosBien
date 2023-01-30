@@ -1,16 +1,32 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import MensajeModal from '../../../../components/modal';
 import './style.css';
+
 const logo =  require('./relaxed-woman-enjoying-sea.png');
+const bordeTextBox = {
+  width: "90%", 
+  border: "0px",
+  borderStyle: "solid",
+  borderRadius: "0px",
+  borderBottomWidth: "2px",
+  borderColor: "#999999",
+  backgroundColor: "white"
+}
 
 function FrmRecoveryPwd(props: any) {
 
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   const  handlerBtnSolicitar = () => {
     setShow(true);
   }
+
+  const  handlerBtnVolver = () => {
+    navigate("/");
+  }  
 
   const handleBtnClose = () =>{ 
     setShow(false);
@@ -18,8 +34,8 @@ function FrmRecoveryPwd(props: any) {
 
   return (
      <div>
-        <div className='containerLogin'>
-          <div className='formularioLogin'>
+        <div className='containerLogin'  style={{backgroundColor: "#EEF2F5"}}>
+          <div className='formularioLogin'  style={{backgroundColor: "white"}}>
             <div className='login'>
               <div className='titulo mx-auto' >
                 <label>RECUPERACIÓN DE CONTRASEÑA</label>
@@ -28,13 +44,17 @@ function FrmRecoveryPwd(props: any) {
                 <div style={{height: "60px"}}></div>
                 <div className=" mb-3 divUserPwd">
                   <input type="text" className="form-control" 
-                  style={{width: 341}} id="txtRut" placeholder="Ingrese su RUT"/>
+                  style={bordeTextBox} id="txtRut" placeholder="Ingrese su RUT"/>
                 </div>              
               </form>
               <div style={{height: "120px"}}></div>
-              <div className="mb-3 divOlvidoPwd ">
-                <Button  className=" btnIngresar btn-danger" onClick={handlerBtnSolicitar}>Solicitar</Button>
-                <Button  className=" btnVolver btn-secondary"  onClick={handlerBtnSolicitar}>Volver</Button>
+              <div className="gap-3 divOlvidoPwd ">
+                <Button  className=" btn-danger btnIngresar" style={{borderRadius: "0"}} onClick={handlerBtnSolicitar} >
+                  Solicitar
+                </Button>
+                <Button  className=" btn-secondary btnVolver" style={{borderRadius: "0"}}  onClick={handlerBtnVolver} >
+                  Volver
+                </Button>
               </div>
             </div>
             <div className=" img-fluid divImgRelax">

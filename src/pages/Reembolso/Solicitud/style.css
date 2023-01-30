@@ -1,4 +1,5 @@
 .sombra{
+  background-color: "white";
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -59,12 +60,28 @@
   background-color: grey;
 }
 
-@media (max-width: 993px) {
+.itemLong{
+  width: 30%;
+}
+
+.botonsLong{
+  width: 183px;
+}
+
+@media (max-width: 576px) {
 
   .body{
 
     flex-direction: column;
 
+  }
+
+  .itemLong{
+    width: 100%;
+  }
+
+  .botonsLong{
+    width: 183px;
   }
 
 }

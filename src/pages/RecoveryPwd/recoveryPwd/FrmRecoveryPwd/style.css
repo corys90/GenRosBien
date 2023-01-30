@@ -41,8 +41,7 @@
 
 .divOlvidoPwd{
   display: flex;
-  text-align: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .textBox{
@@ -52,8 +51,8 @@
 .btnIngresar{
   width: 151px;
   height: 45px;
-  text-transform: capitalize;
-  border: 0;
+  border-width: 1px;
+  border-radius: 0px;
   background: #F21C1C;
   color: white;
 }
@@ -81,19 +80,3 @@
     width: 90%;
   }
 }
-
-/* @media (max-width: 744px) {
-
-  .login{
-    width: 100%;
-  }
-
-  .divImgRelax{
-
-    width: 100%;
-  }
-
-  .formularioLogin{
-    width: 95%;
-  }
-} */

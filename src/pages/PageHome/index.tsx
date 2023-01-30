@@ -42,7 +42,7 @@ function PageHome() {
   ];
 
   return (
-    <div>
+    <div  style={{backgroundColor: "#EEF2F5"}}>
         <HomeBar/>
         <Container>
             <div style={{height: "54px", display: 'flex', alignItems: 'center'}} >Home</div>
@@ -77,7 +77,7 @@ function PageHome() {
           columHeader={["Tipo", "Total", "Utilizado", "Disponible"]}
           data={dataResumen}
           nfilasShown="5"
-          filter={true}
+          filter={false}
         />   
 
         <div className='container'>

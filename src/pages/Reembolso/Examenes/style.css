@@ -59,12 +59,44 @@
   background-color: grey;
 }
 
-@media (max-width: 993px) {
+.itmemLong{
+  width: 30%;
+}
+
+.dropZone{
+  width: 50%;
+}
+
+.botonNuevoReembolso{
+  display: block;
+}
+
+.fontSize{
+  font-size: 15px;
+}
+
+@media (max-width: 576px) {
 
   .body{
 
     flex-direction: column;
 
+  }
+
+  .botonNuevoReembolso{
+    display: none;
+  }
+
+  .dropZone{
+    width: 90%;
+  }
+
+  .itmemLong{
+    width: 110%;
+  }
+
+  .fontSize{
+    font-size: 13px;
   }
 
 }

@@ -22,16 +22,7 @@
 }
 
 .bell{
-  display: flex;
-  text-align: center;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: #AAAAAA;
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-left-color: #AAAAAA;
-  height: 23px;
-  width: 35px;
+  display: block;
   color: #2B2B2B;
 }
 
@@ -78,8 +69,6 @@
 .iconsMobile{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navbar-toggler_color {
@@ -89,7 +78,7 @@
 }
 
 
-@media (max-width: 993px) {
+@media (max-width: 576px) {
 
   .imgBarContainer{
     width: auto;
@@ -113,6 +102,28 @@
 
   .hide2{
     display: none;
+  }
+
+  .nombreUsr{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    width: auto;
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-right-color: #AAAAAA;
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-left-color: #AAAAAA;
+    color: #2B2B2B;
+  }
+
+  .powerOnOff{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 150px;
+
   }
 }
 

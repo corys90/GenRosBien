@@ -59,12 +59,45 @@
   background-color: grey;
 }
 
-@media (max-width: 993px) {
+.itemLong{
+
+  width: 40%;
+
+}
+
+.buttonLong{
+  width: 153px;
+}
+
+.alignButtons{
+
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+@media (max-width: 576px) {
 
   .body{
 
     flex-direction: column;
 
   }
+
+  .itemLong{
+
+    width: 110%;
+  
+  }
+
+  .buttonLong{
+    width: 143px;
+
+  }
+
+  .alignButtons{
+    gap: 10px;
+  }
+  
 
 }

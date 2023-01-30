@@ -1,4 +1,5 @@
 .sombra{
+  background-color: #EEF2F5;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -59,11 +60,36 @@
   background-color: grey;
 }
 
+.btnArrange{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  
+}
+
+.spaceEntreButtons{
+  width: 183px;
+
+}
+
 @media (max-width: 993px) {
 
   .body{
 
     flex-direction: column;
+
+  }
+
+  .spaceEntreButtons{
+      width: 183px;
+      padding: 5px;
+  }
+
+  .btnArrange{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
   }
 

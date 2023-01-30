@@ -21,7 +21,7 @@ function PageReembolsoHome() {
   ];
 
   return (
-    <div>
+    <div  style={{backgroundColor: "#EEF2F5"}}>
         <HomeBar/>
         <Container>
             <div style={{height: "54px", display: 'flex', alignItems: 'center'}}>Reembolso en línea | historial de casos</div>

@@ -1,5 +1,5 @@
-import { Button, Container } from 'react-bootstrap';
 import HomeBar from '../../../components/homeBar';
+import Tip from '../../../components/tip';
 import './style.css';
 
 const PageReembolsoPago = () => {
@@ -12,21 +12,18 @@ const PageReembolsoPago = () => {
   const email = "Corys90@hotmail.com";
 
   return (
-    <>
+    <div style={{backgroundColor: "#E5F0ED"}}>
         <HomeBar/>
-        <Container>
+        <div className='container'>
           <div style={{height: "54px", display: 'flex', alignItems: 'center'}}>Reembolso en línea | Verificar información de pago</div>
-        </Container>
-        <Container className="sombra">
+        </div>
+        <div className="container sombra">
             <div className='fontTitle mb-3 border-bottom'>
               <label htmlFor="">DATOS PARA REALIZAR PAGO</label>
             </div>  
-            <Container className=''>
+            <div className=''>
               <div className="text-center ">
-                <label  className = 'ps-1 pe-2 border rounded-pill ' style={{backgroundColor: "#EEF2F5"}}>
-                    <i className="bi bi-exclamation-circle m-1 text-primary "></i>
-                    Si los datos no son correctos, debes solicitar actualizarlos directamente con el área de bienestar
-                </label>
+                <Tip texto="Si los datos no son correctos, debes solicitar actualizarlos directamente con el área de bienestar" />
                 <div className="mt-5 fw-bold"><label htmlFor="">{nombre}</label></div>
                 <div className="mt-2 "><label htmlFor="">{nit}</label></div>
                 <div className='mt-4 d-flex justify-content-center'>
@@ -49,14 +46,14 @@ const PageReembolsoPago = () => {
                       </tr>                      
                     </table>
                 </div>
-                <div className='p-5'>
-                    <Button className=" btn btn-secondary me-5" style={{width: "183px", borderRadius: "0px"}}><i className="bi bi-caret-left"></i>Volver</Button>
-                    <Button className=" btn btn-danger ms-5" style={{width: "183px", borderRadius: "0px"}}>Siguiente<i className="bi bi-caret-right"></i></Button>
+                <div className='btnArrange gap-2'>
+                    <a href='#!' className=" btn btn-secondary spaceEntreButtons" style={{borderRadius: "0px"}}><i className="bi bi-caret-left"></i>Volver</a>
+                    <a  href='#!' className=" btn btn-danger spaceEntreButtons"  style={{borderRadius: "0px"}}>Siguiente<i className="bi bi-caret-right"></i></a>
                 </div>
               </div>
-            </Container> 
-        </Container>        
-    </>
+            </div> 
+        </div>        
+    </div>
   );
 }
 

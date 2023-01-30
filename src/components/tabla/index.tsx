@@ -8,29 +8,30 @@ function Tabla(props: any) {
 
   const filterHtml = () => {
     return(
-      <div className='container sombra filtro' >
-        <div className="form-check form-check-inline ">
-          <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="0"/>
-          <label  >Todos</label>
+
+      <div className='sombra filtro ' >
+        <div className=" radioStyle gap2">
+          <input className="" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="0"/>
+          <span>Todos</span>
         </div>
-        <div className="form-check form-check-inline ">
-          <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1"/>
-          <label >En proceso</label>
+        <div className=" radioStyle gap2">
+          <input className="" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1"/>
+          <span >En proceso</span>
         </div>
-        <div className="form-check form-check-inline ">
-          <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="2" />
-          <label  >Pagados</label>
+        <div className=" radioStyle gap2">
+          <input className="" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="2" />
+          <span  >Pagados</span>
         </div>
-        <div className="form-check form-check-inline ">
-          <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" />
-          <label  >Rechazados</label>
+        <div className=" radioStyle gap2">
+          <input className="" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" />
+          <span  >Rechazados</span>
         </div>
       </div>
     );
   }
 
   return (
-    <Container>
+    <Container  style={{backgroundColor: "white"}}>
         <div className='fontTitle mb-3 border-bottom'>
           {props.header}  
         </div>

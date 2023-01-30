@@ -1,7 +1,18 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 import MensajeModal from '../../modal';
 import './style.css';
 const logo = require( './relaxed-woman-enjoying-sea.png');
+
+const bordeTextBox = {
+  width: "90%", 
+  border: "0px",
+  borderStyle: "solid",
+  borderRadius: "0px",
+  borderBottomWidth: "2px",
+  borderColor: "#999999",
+  backgroundColor: "white"
+}
 
 function FrmResetPwd() {
 
@@ -16,8 +27,8 @@ function FrmResetPwd() {
   }
 
   return (
-    <div className='containerLogin'>
-        <div className='formularioLogin'>
+    <div className='containerLogin'  style={{backgroundColor: "#EEF2F5"}}>
+        <div className='formularioLogin'  style={{backgroundColor: "white"}}>
           <div className='login'>
             <div className='titulo' >
               <label>REESTABLECER CONTRASEÑA</label>
@@ -25,17 +36,17 @@ function FrmResetPwd() {
             <form>
               <div className=" mb-3 divUserPwd">
                 <input type="text" className="form-control" 
-                  style={{width: 341}} id="txtUser" placeholder="Nueva contraseña"/>
+                  style={bordeTextBox}  id="txtUser" placeholder="Nueva contraseña"/>
               </div>
               <div style={{height: "20px"}}></div>
               <div className=" mb-3 divUserPwd">
                 <input type="password" className="form-control" 
-                style={{width: 341}} id="txtPassword" placeholder="Repita contraseña"/>
+                style={bordeTextBox}  id="txtPassword" placeholder="Repita contraseña"/>
               </div>              
             </form>
             <div style={{height: "100px"}}></div>
             <div className="mb-3 divOlvidoPwd">
-              <button  type="button" className=" btnReestablecer" onClick={handlerBtnReestablecer}>Reestablecer</button>
+              <Button className="btn btn-danger rounded-0 " onClick={handlerBtnReestablecer}  style={{width: "90%", height: "45px"}}>Reestablecer</Button>
             </div>
           </div>
           <div className=" img-fluid divImgRelax">

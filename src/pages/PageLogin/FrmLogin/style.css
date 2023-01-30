@@ -72,25 +72,10 @@
 
   .login{
     width: 90%;
+    height: 500px;
   }
 
   .formularioLogin{
     width: 90%;
   }
 }
-
-/* @media (max-width: 744px) {
-
-  .login{
-    width: 100%;
-  }
-
-  .divImgRelax{
-
-    width: 100%;
-  }
-
-  .formularioLogin{
-    width: 95%;
-  }
-} */

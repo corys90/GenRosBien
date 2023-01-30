@@ -24,8 +24,8 @@
 .body{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  border: 20px;
+  justify-content: space-between;
+
 }
 
 .sombra{
@@ -52,19 +52,7 @@
 .bodySections{
   display: flex;
   flex-direction: column;
-  height: 144px;
-  width: 443px;
-}
 
-.detailSectionMiddle{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bodyMiddleDescarga{
-  display: flex;
-  flex-direction: row;
 }
 
 .botonDescargar{
@@ -89,12 +77,52 @@
   background-color: grey;
 }
 
-@media (max-width: 993px) {
+.datos{
+  font-size: 14px;
+}
+
+.Hdatos{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.borderAbajo{
+  padding: 10px;
+  margin: 10px;
+  border-width: 0 2px 0 0;
+  border-style: solid;
+  border-color: gray;
+  width: 33%;
+}
+
+@media (max-width: 576px) {
 
   .body{
 
     flex-direction: column;
 
+  }
+
+  .Hdatos{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .datos{
+    font-size: 12px;
+  }
+
+  .borderAbajo{
+    padding: 5px;
+    margin: 2px;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: gray;
+    width: 100%;
+  }
+
+  .desparece{
+    display: none
   }
 
 }
